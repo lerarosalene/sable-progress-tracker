@@ -1,0 +1,4 @@
+/reference.json
+node_modules/
+/dist
+*_pug.js

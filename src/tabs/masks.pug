@@ -1,0 +1,12 @@
+h3.text-center Masks
+table.table.table-striped.table-sm
+  thead
+    tr
+      th(scope="col")
+      th.text-center(scope="col") Collected
+  tbody
+    each mask in masks
+      tr
+        th.fw-normal(scope="row") #{mask.name}
+        td.text-center
+          input.form-check-input(type="checkbox", disabled="true", checked=mask.collected?"true":undefined)

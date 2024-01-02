@@ -1,0 +1,15 @@
+h3.text-center Outfits
+table.table.table-striped.table-sm
+  thead
+    tr
+      th(scope="col")
+      th.text-center(scope="col") Top
+      th.text-center(scope="col") Bottom
+  tbody
+    each outfit in outfits
+      tr
+        th.fw-normal(scope="row") #{outfit.name}
+        td.text-center
+          input.form-check-input(type="checkbox", disabled="true", checked=outfit.top?"true":undefined)
+        td.text-center
+          input.form-check-input(type="checkbox", disabled="true", checked=outfit.bottom?"true":undefined)

@@ -1,0 +1,18 @@
+h3.text-center Bikes
+table.table.table-striped.table-sm
+  thead
+    tr
+      th(scope="col")
+      th.text-center(scope="col") Booster
+      th.text-center(scope="col") Wings
+      th.text-center(scope="col") Front
+  tbody
+    each bike in bikes
+      tr
+        th.fw-normal(scope="row") #{bike.name}
+        td.text-center
+          input.form-check-input(type="checkbox", disabled="true", checked=bike.booster?"true":undefined)
+        td.text-center
+          input.form-check-input(type="checkbox", disabled="true", checked=bike.wings?"true":undefined)
+        td.text-center
+          input.form-check-input(type="checkbox", disabled="true", checked=bike.front?"true":undefined)
