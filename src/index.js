@@ -9,7 +9,6 @@ const generate = document.getElementById("generate");
 const outfitsDiv = document.getElementById("outfits");
 const masksDiv = document.getElementById("masks");
 const bikesDiv = document.getElementById("bikes");
-const screenSelectSave = document.getElementById("screen-select-save");
 const screenReport = document.getElementById("screen-report");
 
 function parseSave(file) {
